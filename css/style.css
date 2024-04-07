@@ -483,14 +483,9 @@ a:focus {
 
 /* ----- Seats ----- */
 .carousel-seat {
-  background: rgba(0, 0, 0, 0);;
   flex: 1 0 100%;
   order: 2;
   cursor: pointer;
-}
-
-.carousel-seat:nth-child(even) {
-  background: rgba(0, 0, 0, 0);
 }
 
 @media (max-width: 767px) {
@@ -537,6 +532,8 @@ a:focus {
     text-align: center; /* Align text in the center */
     font-size: 10px;
     width: auto; /* Take full width of carousel-seat */
+    white-space: nowrap;
+    background: rgba(0, 0, 0, 0.5);
   }
 }
 
