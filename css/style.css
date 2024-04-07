@@ -472,25 +472,25 @@ a:focus {
 
 .carousel {
   display: flex;
-  left: -100%;
+  left: -200%;
   list-style: none;
   margin: 0;
   padding: 0;
   position: relative;
-  transform: translateX(100%);
+  transform: translateX(200%);
 }
 
 @media (min-width: 30em) {
   .carousel {
-    left: -33.33333%;
-    transform: translateX(33.33333%);
+    left: -50%;
+    transform: translateX(50%);
   }
 }
 
 @media (min-width: 40em) {
   .carousel {
-    left: -20%;
-    transform: translateX(20%);
+    left: -50%;
+    transform: translateX(50%);
   }
 }
 
@@ -518,45 +518,60 @@ a:focus {
 
 /* ----- Seats ----- */
 .carousel-seat {
-  background: rgba(0, 0, 0, 0.5);;
+  background: rgba(0, 0, 0, 0);;
   flex: 1 0 100%;
   order: 2;
   cursor: pointer;
 }
 
 .carousel-seat:nth-child(even) {
-  background: rgba(0, 0, 0, 0.2);;
+  background: rgba(0, 0, 0, 0);
 }
 
-@media (min-width: 30em) {
+@media (max-width: 767px) {
   .carousel-seat {
-    flex-basis: 100%;
+    flex-basis: 40%;
+    display: flex; /* Change display property */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    position: relative;
   }
-}
 
-@media (min-width: 40em) {
-  .carousel-seat {
-    flex-basis: 50%;
-  }
-}
-
-/* For desktop screens */
-@media only screen and (min-width: 768px) {
   .wos_section .container .wrap .carousel .carousel-seat img {
     width: auto; /* Adjust width for smaller screens */
-    height: 80vh;
+    height: 300px;
     max-width: 100%;
-    margin: 0 auto; /* Center the container horizontally */
+  }
+
+  .wos_section .container .wrap .carousel .carousel-seat .text {
+    position: absolute; /* Position absolutely */
+    bottom: 0; /* Align to the bottom */
+    text-align: center; /* Align text in the center */
+    font-size: 10px;
+    width: auto; /* Take full width of carousel-seat */
   }
 }
 
-/* For mobile screens */
-@media only screen and (max-width: 767px) {
+@media (min-width: 768px) {
+  .carousel-seat {
+    flex-basis: 50%;
+    display: flex; /* Change display property */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+  }
+
   .wos_section .container .wrap .carousel .carousel-seat img {
     width: auto;
-    height: 40vh; /* Adjust width for smaller screens */
+    height: 500px; /* Adjust width for smaller screens */
     max-width: 100%;
-    margin: 0 auto; /* Center the container horizontally */
+  }
+
+  .wos_section .container .wrap .carousel .carousel-seat .text {
+    position: absolute; /* Position absolutely */
+    bottom: 0; /* Align to the bottom */
+    text-align: center; /* Align text in the center */
+    font-size: 10px;
+    width: auto; /* Take full width of carousel-seat */
   }
 }
 

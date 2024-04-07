@@ -346,11 +346,6 @@ output {
   display: inline-block;
 }
 
-summary {
-  display: list-item;
-  cursor: pointer;
-}
-
 template {
   display: none;
 }
