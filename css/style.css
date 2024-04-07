@@ -77,6 +77,8 @@ body {
 /*header section*/
 .hero_area {
   height: 100vh;
+  min-height: -webkit-fill-available;
+  width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -87,19 +89,8 @@ body {
   background-image: url(../images/travel3.jpeg);
   background-size: cover;
   background-attachment: fixed;
+  background-repeat: no-repeat;
   overflow: hidden;
-}
-
-.sub_page .hero_area {
-  height: auto;
-}
-
-.sub_page .who_section.layout_padding {
-  padding-top: 0;
-}
-
-.hero_area.sub_pages {
-  height: auto;
 }
 
 .header_section .container-fluid {
@@ -139,6 +130,7 @@ body {
   background-color: #ff2953;
 }
 
+
 a,
 a:hover,
 a:focus {
@@ -155,31 +147,6 @@ a:focus {
   outline: none !important;
   -webkit-box-shadow: none;
           box-shadow: none;
-}
-
-.user_option {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.user_option a {
-  color: #ffffff;
-  margin: 10px 30px;
-}
-
-.custom_nav-container .nav_search-btn {
-  background-image: url(../images/search-icon.png);
-  background-size: 22px;
-  background-repeat: no-repeat;
-  background-position-y: 7px;
-  width: 35px;
-  height: 35px;
-  padding: 0;
-  border: none;
 }
 
 .navbar-brand {
@@ -204,15 +171,6 @@ a:focus {
 .custom_nav-container {
   z-index: 99999;
   padding: 15px 0;
-}
-
-.custom_nav-container .navbar-toggler {
-  outline: none;
-}
-
-.custom_nav-container .navbar-toggler .navbar-toggler-icon {
-  background-image: url(../images/menu.png);
-  background-size: 55px;
 }
 
 /*end header section*/
@@ -272,6 +230,9 @@ a:focus {
 
 /* Features section */
 .km_section {
+  height: 100vh;
+  min-height: -webkit-fill-available; /* For iOS Safari */
+  width: 100%;
   background-image: url(../images/guitar3.jpeg);
   background-size: cover;
   background-attachment: fixed;
@@ -337,6 +298,8 @@ a:focus {
 
 /* Review Section */
 .review_section {
+  min-height: -webkit-fill-available; /* For iOS Safari */
+  width: 100%;
   background-image: url(../images/travel1.jpeg);
   background-size: cover;
   background-attachment: fixed;
@@ -455,6 +418,8 @@ a:focus {
 
 /* Wall of Shame section */
 .wos_section {
+  min-height: -webkit-fill-available; /* For iOS Safari */
+  width: 100%;
   background-image: url(../images/bg4.jpeg);
   background-size: cover;
   background-attachment: fixed;
