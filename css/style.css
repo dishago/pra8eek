@@ -429,10 +429,11 @@ a:focus {
 
 /* Positioning the images in the slideshow */
 .review_section .container .slideshow-container .mySlides img {
-  width: auto; /* Allowing the image to resize proportionally */
-  height: 500px; /* Fixed height for the image */
-  display: block; /* Ensuring the image is displayed as a block element */
-  margin: 0 auto;
+  display: block; /* Ensure the image is displayed as a block element */
+  margin: 0 auto; /* Center the image horizontally */
+  max-width: 100%;
+  width: auto; /* Allow the width to adjust automatically */
+  height: 500px; /* Fixed height for desktop */
 }
 
 /* The dots/bullets/indicators */
