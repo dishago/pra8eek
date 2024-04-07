@@ -591,6 +591,9 @@ a:focus {
 .footer_section a {
   color: #292929;
 }
+a {
+  display: none;
+}
 
 /* end footer section*/
 /*# sourceMappingURL=style.css.map */
