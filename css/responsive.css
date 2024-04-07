@@ -10,7 +10,7 @@
         margin-top: 10px;
     }
 
-    .slider_section {
+    .home_section {
         padding-top: 45px;
         padding-bottom: 75px;
     }
@@ -46,7 +46,7 @@
 
 
 @media (max-width: 576px) {
-    .slider_section .detail-box h1 {
+    .home_section .detail-box h1 {
         font-size: 3rem;
     }
 }
@@ -54,7 +54,7 @@
 @media (max-width: 480px) {}
 
 @media (max-width: 420px) {
-    .slider_section .detail-box h1 {
+    .home_section .detail-box h1 {
         letter-spacing: .3rem;
     }
 }

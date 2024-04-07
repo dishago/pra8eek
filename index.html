@@ -30,7 +30,7 @@
 
 <body>
   <div class="hero_area blur-darken-overlay">
-    <!-- header section strats -->
+    <!-- header section starts -->
     <header class="header_section">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
@@ -68,8 +68,8 @@
     <!-- end header section -->
 
     <!-- slider section -->
-    <section class=" slider_section position-relative">
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <section class="home_section position-relative">
+      <div id="carouselExampleIndicators" class="slide">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="container">
@@ -197,7 +197,7 @@
                   Delicate
                 </h5>
                 <p>
-                  Potential to break with a single touch
+                  If a party gets boring, he can break a leg (literally)
                 </p>
               </div>
             </div>
@@ -255,8 +255,38 @@
 
             <!-- Full-width images with number and caption text -->
             <div class="mySlides fade">
+                <img src="images/msg4.png">
+                <div class="text">- Nikunj</div>
+            </div>
+
+            <div class="mySlides fade">
                 <img src="images/shikhar.png">
-                <div class="text">Shikhar</div>
+                <div class="text">- Shikhar</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/msg5.jpeg">
+                <div class="text">- Harsh</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/msg6.jpeg">
+                <div class="text">- Rishav</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/msg3.jpeg">
+                <div class="text">- Sukriti</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/msg2.jpeg">
+                <div class="text">- Shubham</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/msg7.png">
+                <div class="text">- Rahul</div>
             </div>
         
             <!-- Next and previous buttons -->
@@ -267,6 +297,12 @@
 
         <div style="text-align:center">
             <span class="dot" onclick="currentSlide(1, 'review')"></span>
+            <span class="dot" onclick="currentSlide(2, 'review')"></span>
+            <span class="dot" onclick="currentSlide(3, 'review')"></span>
+            <span class="dot" onclick="currentSlide(4, 'review')"></span>
+            <span class="dot" onclick="currentSlide(5, 'review')"></span>
+            <span class="dot" onclick="currentSlide(6, 'review')"></span>
+            <span class="dot" onclick="currentSlide(7, 'review')"></span>
         </div>
     </div>
     </section>
@@ -282,58 +318,56 @@
           Wall of Shame
         </h2>
       </div>
-      <!-- Slideshow container -->
-      <div class="slideshow-container">
 
-        <!-- Full-width images with number and caption text -->
-        <div class="mySlides fade">
-            <img src="images/meme8.jpeg">
-        </div>
-
-        <div class="mySlides fade">
-            <img src="images/meme2.jpeg">
-        </div>
-
-        <div class="mySlides fade">
-            <img src="images/meme3.jpeg">
-        </div>
-
-        <div class="mySlides fade">
-            <img src="images/meme4.jpeg">
-        </div>
-
-        <div class="mySlides fade">
-            <img src="images/meme5.jpeg">
-        </div>
-
-        <div class="mySlides fade">
-            <img src="images/meme6.jpeg">
-        </div>
-
-        <div class="mySlides fade">
-            <img src="images/meme7.jpeg">
-        </div>
-    
-        <div class="mySlides fade">
-            <img src="images/meme1.jpeg">
-        </div>
-
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1, 'wos')">&#10094;</a>
-        <a class="next" onclick="plusSlides(1, 'wos')">&#10095;</a>
-    </div>
-    <br>
-
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1, 'wos')"></span> 
-        <span class="dot" onclick="currentSlide(2, 'wos')"></span> 
-        <span class="dot" onclick="currentSlide(3, 'wos')"></span> 
-        <span class="dot" onclick="currentSlide(4, 'wos')"></span> 
-        <span class="dot" onclick="currentSlide(5, 'wos')"></span> 
-        <span class="dot" onclick="currentSlide(6, 'wos')"></span> 
-        <span class="dot" onclick="currentSlide(7, 'wos')"></span> 
-        <span class="dot" onclick="currentSlide(8, 'wos')"></span>
-    </div>
+      <!-- auto scroll carousel -->
+      <div class='wrap'>
+        <ul class='carousel is-set'>
+          <li class='carousel-seat'>
+            <img src="images/meme8.jpeg" style="height: 650px; width: auto;">
+            <div class="text" style="position: absolute; bottom: 0; text-align: center; background-color: rgba(0, 0, 0, 0.5); color: white; padding: 5px; box-sizing: border-box; margin: 0 auto; font-size: 10px;">Art by Deepesh</div>
+          </li>
+          <li class='carousel-seat'>
+            <img src="images/meme3.jpeg" style="height: 650px; width: auto;">
+            <div class="text" style="position: absolute; bottom: 0; text-align: center; background-color: rgba(0, 0, 0, 0.5); color: white; padding: 5px; box-sizing: border-box; margin: 0 auto; font-size: 10px;">Art by Nikunj</div>
+          </li>
+          <li class='carousel-seat'>
+            <img src="images/meme9.jpeg" style="height: 650px; width: auto;">
+            <div class="text" style="position: absolute; bottom: 0; text-align: center; background-color: rgba(0, 0, 0, 0.5); color: white; padding: 5px; box-sizing: border-box; margin: 0 auto; font-size: 10px;">Art by Sukriti</div>
+          </li>
+          <li class='carousel-seat'>
+            <img src="images/meme2.jpeg" style="height: 650px; width: auto;">
+            <div class="text" style="position: absolute; bottom: 0; text-align: center; background-color: rgba(0, 0, 0, 0.5); color: white; padding: 5px; box-sizing: border-box; margin: 0 auto; font-size: 10px;">Art by Nikunj</div>
+          </li>
+          <li class='carousel-seat'>
+            <img src="images/meme6.jpeg" style="height: 650px; width: auto;">
+            <div class="text" style="position: absolute; bottom: 0; text-align: center; background-color: rgba(0, 0, 0, 0.5); color: white; padding: 5px; box-sizing: border-box; margin: 0 auto; font-size: 10px;">Art by Sukriti</div>
+          </li>
+          <li class='carousel-seat'>
+            <img src="images/meme4.jpeg" style="height: 650px; width: auto;">
+            <div class="text" style="position: absolute; bottom: 0; text-align: center; background-color: rgba(0, 0, 0, 0.5); color: white; padding: 5px; box-sizing: border-box; margin: 0 auto; font-size: 10px;">Art by Nikunj</div>
+          </li>
+          <li class='carousel-seat'>
+            <img src="images/meme11.jpeg" style="height: 650px; width: auto;">
+            <div class="text" style="position: absolute; bottom: 0; text-align: center; background-color: rgba(0, 0, 0, 0.5); color: white; padding: 5px; box-sizing: border-box; margin: 0 auto; font-size: 10px;">Art by Sukriti</div>
+          </li>
+          <li class='carousel-seat'>
+            <img src="images/meme5.jpeg" style="height: 650px; width: auto;">
+            <div class="text" style="position: absolute; bottom: 0; text-align: center; background-color: rgba(0, 0, 0, 0.5); color: white; padding: 5px; box-sizing: border-box; margin: 0 auto; font-size: 10px;">Art by Nikunj</div>
+          </li>
+          <li class='carousel-seat'>
+            <img src="images/meme10.jpeg" style="height: 650px; width: auto;">
+            <div class="text" style="position: absolute; bottom: 0; text-align: center; background-color: rgba(0, 0, 0, 0.5); color: white; padding: 5px; box-sizing: border-box; margin: 0 auto; font-size: 10px;">Art by Nikunj</div>
+          </li>
+          <li class='carousel-seat'>
+            <img src="images/meme7.jpeg" style="height: 650px; width: auto;">
+            <div class="text" style="position: absolute; bottom: 0; text-align: center; background-color: rgba(0, 0, 0, 0.5); color: white; padding: 5px; box-sizing: border-box; margin: 0 auto; font-size: 10px;">Art by Nikunj</div>
+          </li>
+          <li class='carousel-seat'>
+            <img src="images/meme1.jpeg" style="height: 650px; width: auto;">
+            <div class="text" style="position: absolute; bottom: 0; text-align: center; background-color: rgba(0, 0, 0, 0.5); color: white; padding: 5px; box-sizing: border-box; margin: 0 auto; font-size: 10px;">Art by Nikunj</div>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -342,12 +376,13 @@
   <!-- footer section -->
   <footer class="container-fluid footer_section">
     <p>
-      &copy; 2022 All Rights Reserved.
+      &copy; 2024 For Educational & Learning Purposes Only
     </p>
   </footer>
   <!-- footer section -->
 
   <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/auto-scroll.js"></script>
   <script src="js/bootstrap.js"></script>
   <script src="js/script.js"></script>
 

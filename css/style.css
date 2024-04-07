@@ -216,7 +216,9 @@ a:focus {
 }
 
 /*end header section*/
-.slider_section {
+
+/* Home Section */
+.home_section {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -229,87 +231,46 @@ a:focus {
   color: #ffffff;
 }
 
-.slider_section #carouselExampleIndicators {
+.home_section #carouselExampleIndicators {
   width: 100%;
 }
 
-.slider_section .row {
+.home_section .row {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.slider_section .box {
+.home_section .box {
   margin: 125px 0;
 }
 
-.slider_section .detail-box {
+.home_section .detail-box {
   text-align: center;
 }
 
-.slider_section .detail-box h1,
-.slider_section .detail-box h2,
-.slider_section .detail-box h3 {
+.home_section .detail-box h1,
+.home_section .detail-box h2,
+.home_section .detail-box h3 {
   text-transform: uppercase;
   font-weight: bold;
 }
 
-.slider_section .detail-box h2 {
+.home_section .detail-box h2 {
   font-size: 2.5rem;
 }
 
-.slider_section .detail-box h1 {
+.home_section .detail-box h1 {
   font-size: 3.5rem;
   font-weight: bold;
   letter-spacing: .5rem;
 }
 
-.slider_section .detail-box p {
+.home_section .detail-box p {
   margin-top: 25px;
 }
 
-.slider_section .detail-box a {
-  display: inline-block;
-  padding: 8px 35px;
-  background-color: transparent;
-  border: 1.5px solid #ffffff;
-  color: #ffffff;
-  border-radius: 0px;
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: -webkit-transform 0.3s;
-  transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s;
-  text-transform: uppercase;
-  margin-top: 35px;
-}
-
-.slider_section .detail-box a:hover {
-  background-color: #ffffff;
-  color: #000000;
-}
-
-.slider_section #carouselExampleIndicators .carousel-indicators {
-  position: unset;
-  margin: 0;
-  margin-top: 45px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.slider_section #carouselExampleIndicators .carousel-indicators li {
-  width: 14px;
-  height: 14px;
-  background-color: transparent;
-  border: 2px solid #ffffff;
-  border-radius: 100%;
-  opacity: 1;
-}
-
-.slider_section #carouselExampleIndicators .carousel-indicators li.active {
-  border: 4px solid #ffffff;
-}
-
+/* Features section */
 .km_section {
   background-image: url(../images/guitar3.jpeg);
   background-size: cover;
@@ -374,6 +335,7 @@ a:focus {
   margin-bottom: 10px;
 }
 
+/* Review Section */
 .review_section {
   background-image: url(../images/travel1.jpeg);
   background-size: cover;
@@ -459,9 +421,10 @@ a:focus {
   padding: 8px 12px;
   position: absolute;
   bottom: 0; /* Placing the caption text at the bottom */
-  left: 0; /* Aligning the text to the left */
-  right: 0; /* Aligning the text to the right */
+  right: 0; /* Aligning the text to the left */
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
 }
 
 /* Positioning the images in the slideshow */
@@ -469,7 +432,7 @@ a:focus {
   width: auto; /* Allowing the image to resize proportionally */
   height: 500px; /* Fixed height for the image */
   display: block; /* Ensuring the image is displayed as a block element */
-  margin: 0 auto; /* Centering the image horizontally */
+  margin: 0 auto;
 }
 
 /* The dots/bullets/indicators */
@@ -477,7 +440,7 @@ a:focus {
   cursor: pointer;
   height: 15px;
   width: 15px;
-  margin: 20px 2px;
+  margin: 2px 2px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
@@ -489,8 +452,9 @@ a:focus {
   background-color: #717171;
 }
 
+/* Wall of Shame section */
 .wos_section {
-  background-image: url(../images/funnybg.jpeg);
+  background-image: url(../images/bg4.jpeg);
   background-size: cover;
   background-attachment: fixed;
   color: #ffffff;
@@ -529,19 +493,90 @@ a:focus {
   background-color: #717171;
 }
 
-/* Positioning the images in the slideshow */
-.wos_section .container .slideshow-container .mySlides img {
-  width: auto; /* Allowing the image to resize proportionally */
-  height: 700px; /* Fixed height for the image */
-  display: block; /* Ensuring the image is displayed as a block element */
-  margin: 0 auto; /* Centering the image horizontally */
+/* ----- Auto Scroll Carousel ----- */
+.wrap {
+  overflow: hidden;
 }
 
+.carousel {
+  display: flex;
+  left: -100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  transform: translateX(100%);
+}
+
+@media (min-width: 30em) {
+  .carousel {
+    left: -33.33333%;
+    transform: translateX(33.33333%);
+  }
+}
+
+@media (min-width: 40em) {
+  .carousel {
+    left: -20%;
+    transform: translateX(20%);
+  }
+}
+
+/* States */
+.carousel.is-reversing {
+  transform: translateX(-100%);
+}
+
+@media (min-width: 30em) {
+  .carousel.is-reversing {
+    transform: translateX(-33.33333%);
+  }
+}
+
+@media (min-width: 40em) {
+  .carousel.is-reversing {
+    transform: translateX(-20%);
+  }
+}
+
+.carousel.is-set {
+  transform: none;
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* ----- Seats ----- */
+.carousel-seat {
+  background: rgba(0, 0, 0, 0.5);;
+  flex: 1 0 100%;
+  order: 2;
+  cursor: pointer;
+}
+
+.carousel-seat:nth-child(even) {
+  background: rgba(0, 0, 0, 0.2);;
+}
+
+@media (min-width: 30em) {
+  .carousel-seat {
+    flex-basis: 33.33333%;
+  }
+}
+
+@media (min-width: 40em) {
+  .carousel-seat {
+    flex-basis: 20%;
+  }
+}
+
+/* States */
+.carousel-seat.is-ref {
+  order: 1;
+}
 
 /* footer section*/
 .footer_section {
   background-color: #fbfdfd;
-  padding: 20px;
+  padding: 5px;
   font-weight: 500;
   position: relative;
 }
