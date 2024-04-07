@@ -461,35 +461,6 @@ a:focus {
   color: #ffffff;
 }
 
-.wos_section .box {
-  margin-top: 55px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-}
-
-.wos_section .box .name h5 {
-  font-weight: bold;
-  margin-bottom: 15px;
-}
-
-.wos_section .box .img-box {
-  border-radius: 15px;
-  overflow: hidden;
-}
-
-.wos_section .box .img-box img {
-  width: 100%;
-}
-
 .wos_section .container .active, .dot:hover {
   background-color: #717171;
 }
@@ -559,13 +530,33 @@ a:focus {
 
 @media (min-width: 30em) {
   .carousel-seat {
-    flex-basis: 33.33333%;
+    flex-basis: 100%;
   }
 }
 
 @media (min-width: 40em) {
   .carousel-seat {
-    flex-basis: 20%;
+    flex-basis: 50%;
+  }
+}
+
+/* For desktop screens */
+@media only screen and (min-width: 768px) {
+  .wos_section .container .wrap .carousel .carousel-seat img {
+    width: auto; /* Adjust width for smaller screens */
+    height: 80vh;
+    max-width: 100%;
+    margin: 0 auto; /* Center the container horizontally */
+  }
+}
+
+/* For mobile screens */
+@media only screen and (max-width: 767px) {
+  .wos_section .container .wrap .carousel .carousel-seat img {
+    width: auto;
+    height: 40vh; /* Adjust width for smaller screens */
+    max-width: 100%;
+    margin: 0 auto; /* Center the container horizontally */
   }
 }
 
