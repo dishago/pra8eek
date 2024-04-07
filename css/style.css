@@ -230,7 +230,6 @@ a:focus {
 
 /* Features section */
 .km_section {
-  height: 100vh;
   min-height: -webkit-fill-available; /* For iOS Safari */
   width: 100%;
   background-image: url(../images/guitar3.jpeg);
