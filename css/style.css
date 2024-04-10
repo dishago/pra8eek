@@ -93,6 +93,12 @@ body {
   overflow: hidden;
 }
 
+@media (max-width: 767px) {
+  .hero_area {
+    background-position: 80% 50%;
+  }
+}
+
 .header_section .container-fluid {
   padding-right: 25px;
   padding-left: 25px;
@@ -233,7 +239,9 @@ a:focus {
   min-height: -webkit-fill-available; /* For iOS Safari */
   width: 100%;
   background-image: url(../images/guitar3.jpeg);
-  background-size: cover;
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   color: #ffffff;
   overflow: hidden;
@@ -300,10 +308,18 @@ a:focus {
   min-height: -webkit-fill-available; /* For iOS Safari */
   width: 100%;
   background-image: url(../images/travel1.jpeg);
-  background-size: cover;
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   color: #ffffff;
   text-align: center;
+}
+
+@media (max-width: 767px) {
+  .review_section {
+    background-position: 80% 50%;
+  }
 }
 
 .review_section h2 {
@@ -421,8 +437,16 @@ a:focus {
   width: 100%;
   background-image: url(../images/bg4.jpeg);
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   color: #ffffff;
+}
+
+@media (max-width: 767px) {
+  .review_section {
+    background-position: 70% 50%;
+  }
 }
 
 .wos_section .container .active, .dot:hover {
