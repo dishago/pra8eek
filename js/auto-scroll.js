@@ -32,7 +32,7 @@ $(document).ready(function() {
 
   intervalId = setInterval(function() {
     progress();
-  }, 2000);
+  }, 3000);
 
   $('.carousel-seat').click(function() {
     isPaused = !isPaused;

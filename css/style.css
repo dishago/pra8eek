@@ -77,7 +77,6 @@ body {
 /*header section*/
 .hero_area {
   height: 100vh;
-  min-height: -webkit-fill-available;
   width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -236,7 +235,6 @@ a:focus {
 
 /* Features section */
 .km_section {
-  min-height: -webkit-fill-available; /* For iOS Safari */
   width: 100%;
   background-image: url(../images/guitar3.jpeg);
   background-size: auto 100%;
@@ -305,7 +303,6 @@ a:focus {
 
 /* Review Section */
 .review_section {
-  min-height: -webkit-fill-available; /* For iOS Safari */
   width: 100%;
   background-image: url(../images/travel1.jpeg);
   background-size: auto 100%;
@@ -433,7 +430,6 @@ a:focus {
 
 /* Wall of Shame section */
 .wos_section {
-  min-height: -webkit-fill-available; /* For iOS Safari */
   width: 100%;
   background-image: url(../images/bg4.jpeg);
   background-size: cover;
