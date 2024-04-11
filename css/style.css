@@ -43,6 +43,15 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5); /* Adjust alpha to control darkness */
   backdrop-filter: blur(3px); /* Adjust blur radius as needed */
+  -webkit-backdrop-filter: blur(3px); /* Add vendor prefix for Safari */
+}
+
+@media (max-width: 767px) {
+  .blur-darken-overlay::before {
+    background-color: rgba(0, 0, 0, 0.7); /* Increase darkness for mobile */
+    -webkit-backdrop-filter: none; /* Disable backdrop filter on mobile */
+    backdrop-filter: none;
+  }
 }
 
 .heading_container {
@@ -77,26 +86,14 @@ body {
 /*header section*/
 .hero_area {
   height: 100vh;
-  min-height: -webkit-fill-available;
   width: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   background-image: url(../images/travel3.jpeg);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
   overflow: hidden;
-}
-
-@media (max-width: 767px) {
-  .hero_area {
-    background-position: 80% 50%;
-  }
 }
 
 .header_section .container-fluid {
@@ -239,12 +236,19 @@ a:focus {
   min-height: -webkit-fill-available; /* For iOS Safari */
   width: 100%;
   background-image: url(../images/guitar3.jpeg);
-  background-size: auto 100%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: #ffffff;
   overflow: hidden;
+}
+
+@media (max-width: 767px) {
+  .km_section {
+    background-size: 100% 100%;
+    background-position: center;
+  }
 }
 
 .km_section .us_container {
@@ -318,7 +322,8 @@ a:focus {
 
 @media (max-width: 767px) {
   .review_section {
-    background-position: 80% 50%;
+    background-size: 100% 100%;
+    background-position: center;
   }
 }
 
@@ -445,7 +450,8 @@ a:focus {
 
 @media (max-width: 767px) {
   .review_section {
-    background-position: 70% 50%;
+    background-size: 100% 100%;
+    background-position: center;
   }
 }
 
